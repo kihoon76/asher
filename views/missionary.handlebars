@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko" manifest="">
+<head>
+	<title>아셀교회</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		html, body {
+        	height: 100%;
+        	margin: 0;
+        	padding: 0;
+      	}
+
+      	.map {
+        	height: 30%;
+			margin-top : 20px;
+      	}
+	</style>
+</head>
+<body onContextMenu="return false">
+	<img src="https://maps.googleapis.com/maps/api/staticmap?center=Australia&size=640x400&style=element:labels|visibility:off&style=element:geometry.stroke|visibility:off&style=feature:landscape|element:geometry|saturation:-100&style=feature:water|saturation:-100|invert_lightness:true&key=AIzaSyBiPe84RmKsmeaY2Co8TWqo6Cz3YTYWyVI"><br/>
+	<div id="map" class="map"></div>
+	<div id="map2" class="map"></div>
+
+	<script>
+		var map, map2;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: -34.397, lng: 150.644}
+			   ,zoom: 8
+			});
+
+			map2 = new google.maps.Map(document.getElementById('map2'), {
+				center: {lat: -34.397, lng: 150.644}
+			   ,zoom: 8
+			});
+		}
+	</script>
+	<script async defer
+	 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiPe84RmKsmeaY2Co8TWqo6Cz3YTYWyVI&callback=initMap">
+	</script>
+</body>
+</html>
+
+
+
+
+

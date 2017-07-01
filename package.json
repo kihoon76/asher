@@ -1,0 +1,22 @@
+{
+  "name": "asherweb",
+  "version": "1.0.0",
+  "description": "아셀교회웹자료실",
+  "main": "asherweb.js",
+  "scripts": {
+    "start": "node asherweb.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "남기훈",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express3-handlebars": "^0.5.2",
+    "vid-streamer": "^1.0.0",
+    "winston": "^2.3.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}

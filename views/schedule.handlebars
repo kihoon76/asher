@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko" manifest="">
+	<head>
+		<title>아셀교회</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="thirdpart/extensible/Extensible-config.js"></script>
+		<script src="thirdpart/extensible/App.js"></script>
+    	<link rel="stylesheet" href="thirdpart/extensible/test-app.css" />
+	</head>
+	<body>
+		<div style="display:none;">
+			<div id="app-header-content">
+				<div id="app-logo">
+					<div class="logo-top">&#160;</div>
+					<div id="logo-body">&#160;</div>
+					<div class="logo-bottom">&#160;</div>
+				</div>
+				<h1>Ext Calendar Pro</h1>
+				<span id="app-msg" class="x-hidden"></span>
+    		</div>
+    	</div>
+	</body>
+	<script>
+		var updateLogoDt = function(){
+			document.getElementById('logo-body').innerHTML = new Date().getDate();
+		}
+		updateLogoDt();
+		//setInterval(updateLogoDt, 1000);
+	</script>
+</html>
